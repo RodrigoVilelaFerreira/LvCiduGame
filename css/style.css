@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+#timer {
+    font-size: 40px;
+    color: gold;
+    text-align: right;
+    text-shadow: 3px 3px 2px rgb(0, 0, 0), 2px 2px 10px rgb(255, 255, 255);
+    z-index: 3;
+    margin: 2%;
+}   
+
+#moon {
+    position: absolute;
+    display: flex;
+    left: 40vw;
+    top: 2vh;
+    height: 30vh;
+    z-index: -10;
+}
+
 .game {
     width: 100%;
     height: 100vh;
@@ -12,6 +30,7 @@
     position: relative;
     overflow: hidden;
     background: linear-gradient(rgb(5, 0, 75), rgb(9, 0, 133));
+    z-index: -11;
 
 }
 
@@ -34,8 +53,9 @@
 
 .cloud-game{
     position: absolute;
-    width: 550px;
+    height: 40vh;
     animation: clouds-animation 20s infinite linear;
+    z-index: -1;
 }
 
 .stars-game{
@@ -43,8 +63,9 @@
     visibility: hidden;
     height: 50vh;
     width: 100%;
-    animation: start-stars-animation 10s linear;
+    animation: start-stars-animation 20s linear;
     animation-iteration-count: 1;
+    z-index: -9;
 }
 
 .stars-game:nth-child(2){
@@ -52,7 +73,8 @@
     visibility: hidden;
     height: 50vh;
     width: 100%;
-    animation: stars-animation-continue 20s infinite linear;
+    animation: stars-animation-continue 40s infinite linear;
+    z-index: -8;
 }
 
 .stars-game:nth-child(3){
@@ -60,8 +82,9 @@
     visibility: hidden;
     height: 50vh;
     width: 100%;
-    animation: stars-animation-continue 20s infinite linear;
-    animation-delay: 10s;
+    animation: stars-animation-continue 40s infinite linear;
+    animation-delay: 20s;
+    z-index: -7;
 }
 
 
@@ -76,7 +99,7 @@
 
 @keyframes clouds-animation {
     from{
-        right: -550px;
+        right: -600px;
     }
     to{
         right:  100%;
