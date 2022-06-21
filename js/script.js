@@ -1,31 +1,31 @@
 
-const mario = document.querySelector(".super-mario");
-const pipe = document.querySelector(".pipe-game");
+const mainCharacter = document.querySelector(".mainCharacter");
+const SimpleObstacle1 = document.querySelector(".SimpleObstacle1-game");
 
 const jump = () => {
-  mario.classList.add("jump-mario");
+  mainCharacter.classList.add("jump-mainCharacter");
 
   setTimeout(() => {
-    mario.classList.remove("jump-mario");
+    mainCharacter.classList.remove("jump-mainCharacter");
   }, 500);
 };
 
 const loopGame = setInterval(() => {
-  const pipePosition = pipe.offsetLeft;
-  const marioPosition = +window
-  .getComputedStyle(mario)
+  const SimpleObstacle1Position = SimpleObstacle1.offsetLeft;
+  const mainCharacterPosition = +window
+  .getComputedStyle(mainCharacter)
   .bottom.replace("px", "");
   
-  if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
-    pipe.style.animation = "none";
-    pipe.style.left = `${pipePosition}px`;
+  if (SimpleObstacle1Position <= 120 && SimpleObstacle1Position > 0 && mainCharacterPosition < 80) {
+    SimpleObstacle1.style.animation = "none";
+    SimpleObstacle1.style.left = `${SimpleObstacle1Position}px`;
     
-    mario.style.animation = "none";
-    mario.style.bottom = `${marioPosition}px`;
+    mainCharacter.style.animation = "none";
+    mainCharacter.style.bottom = `${mainCharacterPosition}px`;
     
-    mario.src = "./Images/lvcidu-game-over-new.png";
-    mario.style.width = "150px";
-    mario.style.marginLeft = "5px";
+    mainCharacter.src = "./Images/lvcidu-game-over-new.png";
+    mainCharacter.style.width = "150px";
+    mainCharacter.style.marginLeft = "5px";
     
     clearInterval(timerVariable);
     clearInterval(loopGame);

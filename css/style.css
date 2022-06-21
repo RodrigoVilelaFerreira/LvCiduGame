@@ -34,21 +34,21 @@
 
 }
 
-.pipe-game {
+.SimpleObstacle1-game {
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: pipe-animation 1.5s infinite linear;
+    animation: SimpleObstacle1-animation 1.5s infinite linear;
 }
 
-.super-mario{
+.mainCharacter{
     width:150px;
     position: absolute;
     bottom: 0;
 }
 
-.jump-mario {
-    animation: mario-animation 500ms ease-out;
+.jump-mainCharacter {
+    animation: mainCharacter-animation 500ms ease-out;
 }
 
 .cloud-game{
@@ -88,7 +88,7 @@
 }
 
 
-@keyframes pipe-animation {
+@keyframes SimpleObstacle1-animation {
     from {
         right: -80px;
     }
@@ -129,7 +129,7 @@
 
 
 
-@keyframes mario-animation{
+@keyframes mainCharacter-animation{
     0% {
         bottom:0;
     }
