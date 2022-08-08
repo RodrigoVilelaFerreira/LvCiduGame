@@ -22,7 +22,7 @@
     display: none;
 }
 
-#timer {
+.info-game {
     font-size: 40px;
     color: gold;
     text-align: right;
@@ -30,15 +30,6 @@
     z-index: 3;
     margin: 2%;
 }   
-
-#jumps {
-    font-size: 40px;
-    color: gold;
-    text-align: right;
-    text-shadow: 3px 3px 2px rgb(0, 0, 0), 2px 2px 10px rgb(255, 255, 255);
-    z-index: 3;
-    margin: 2%;
-}  
 
 #moon {
     position: absolute;
@@ -65,7 +56,9 @@
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: SimpleObstacle1-animation 1.5s infinite linear;
+    right: -80px;
+    animation: SimpleObstacle1-animation linear infinite normal none running;
+    animation-duration: 1.5s;
 }
 
 .mainCharacter{
