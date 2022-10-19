@@ -4,12 +4,30 @@
     box-sizing: border-box;
 }
 
-#restartButton {
+h2{
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px rgb(255, 208, 0), 2px 2px 10px rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+#gameOverScreen{
+    text-align: center;
+    align-content: center;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
     position: absolute;
     left: 40vw;
-    top: 40vh;
+    top: 35vh;
     z-index: 11;
-    
+}
+
+#score{
+    text-align: center;
+}
+
+#restartButton {    
     border: 2px solid #ffd900;
     color: rgb(255, 0, 0);
     text-shadow: 1px 1px rgb(255, 208, 0), 2px 2px 10px rgb(255, 255, 255);
@@ -18,9 +36,8 @@
     font-size: 50px;
     background-color: rgba(0, 0, 0, 0.3);
     cursor: pointer;
-
-    display: none;
 }
+
 
 .info-game {
     font-size: 40px;

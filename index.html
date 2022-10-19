@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/style.css" /> 
-        <title>Super LvCidu StartSe</title>
+        <title>Super LvCidu</title>
     </head>
     <body>
         <div class="game">
@@ -17,9 +17,15 @@
             <img src="./Images/camera-game.png" class="SimpleObstacle1-game" />
             <p id="timer" class="info-game"> Tempo: <span id="count_up_timer"> 00:00:00</span></p>
             <p id="jumps" class="info-game"> Pulos: <span id="jump_counter"> 0</span></p>
+            <p id="difficult" class="info-game" style="display: none;"> Level: <span id="difficulty_level"> 1</span></p>
             <img src="./Images/moon.png" id="moon">
         </div>
-        <button id="restartButton">Restart</button>
+         
+        <section id="gameOverScreen">
+            <h2>Game Over</h2>
+            <p id="score" class="info-game"> Score: <span id="score_counter"> 0</span></p>
+            <button id="restartButton">Restart</button>
+        </section>
         <script src="./js/script.js"></script>
     </body>
 </html>
